@@ -1,0 +1,11 @@
+"metric","value"
+"n",48055
+"positive",11248
+"negative",36807
+"prevalence",0.234065133700968
+"auroc",0.887263607522009
+"average_precision",0.702158039550037
+"trees",500
+"min_oob_trees",142
+"max_oob_trees",231
+"stored_oob_error",0.161127874310686
