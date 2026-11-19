@@ -1,0 +1,21 @@
+Package: m6APrediction
+Type: Package
+Title: Predict RNA N6-Methyladenosine Sites with a Random Forest
+Version: 1.0.0
+Authors@R: person(given = "yihui", family = "xu", email = "m17725297170@163.com", role = c("aut", "cre"))
+Author: yihui xu [aut, cre]
+Maintainer: yihui xu <m17725297170@163.com>
+Description: Predicts candidate RNA N6-methyladenosine sites using a supplied
+    random forest classifier. Provides single-site and batch prediction from
+    nucleotide context, transcript annotations, GC content, log2-transformed
+    length and distance features, and evolutionary conservation. Includes the
+    fitted teaching model and example inputs for reproducible demonstrations.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports:
+    randomForest,
+    stats
+Suggests:
+    knitr,
+    rmarkdown
