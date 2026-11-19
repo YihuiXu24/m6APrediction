@@ -1,6 +1,6 @@
 # m6APrediction
 
-**Version 1.0.0 · BIO215 Practical 7 · yihui xu**
+**Version 1.0.0 · BIO215 Interim Report 3 · yihui xu**
 
 `m6APrediction` is an R package for scoring candidate RNA
 N6-methyladenosine (m6A) sites with the random forest supplied in
@@ -22,29 +22,15 @@ R 3.5.0 or later is declared for compatibility with the bundled RDS
 format. Dependency versions may require a newer R release. The package
 was checked locally using R 4.6.0 on Windows.
 
-### Install the submitted archive
-
-Download `m6APrediction_1.0.0.tar.gz`, then run the following from its
-containing directory. The archive contains the model and both exported
-prediction functions.
-
-``` r
-install.packages("randomForest", repos = "https://cloud.r-project.org")
-install.packages("m6APrediction_1.0.0.tar.gz", repos = NULL, type = "source")
-library(m6APrediction)
-```
-
-For this project, the archive is saved in
-`C:/Users/4Real/Desktop/Project/`. In RStudio, it can also be installed
-using **Packages → Install → Package Archive File**.
-
 ### Install from GitHub
 
-Install the package directly from GitHub using the following commands.
+Run these commands in the R console. The package includes a fitted model, so the download may take a few minutes.
 
 ``` r
 install.packages("remotes", repos = "https://cloud.r-project.org")
-remotes::install_github("YihuiXu24/m6APrediction")
+options(timeout = 900)
+remotes::install_github("YihuiXu24/m6APrediction", upgrade = "never")
+library(m6APrediction)
 ```
 
 ## Required input features
